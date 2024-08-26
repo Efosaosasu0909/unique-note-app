@@ -1,6 +1,7 @@
 import axios from "axios";
 
-export const baseURL = "http://localhost:3030/api";
+// export const baseURL = "http://localhost:3030/api";
+export const baseURL = "https://unique-notes-server.vercel.app/api";
 
 const API = axios.create({ baseURL: baseURL });
 API.interceptors.request.use((req) => {
